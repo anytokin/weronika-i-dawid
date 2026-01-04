@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weronika & Dawid - Wedding</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">Cieszymy się, że tu jesteś!</p>
+      <h1>Weronika & Dawid</h1>
+      <p class="subtitle">Pobieramy się!</p>
+
+      <div class="hero-cards">
+        <div class="card">
+          <h3>Data</h3>
+          <p>05 czerwca 2026</p>
+        </div>
+        <div class="card">
+          <h3>Miejsce</h3>
+          <p>Sopot</p>
+        </div>
+        <div class="card">
+          <h3>Czas</h3>
+          <p>15:00</p>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="#details">Szczegóły</a>
+        <a class="btn btn-rsvp" href="#rsvp">RSVP</a>
+        <a class="btn btn-music" href="https://music.youtube.com/playlist?list=PLZXcRO66FCTfb11R_tczmDolO9foUSdRZ&jct=aT5jw3dRedewwnHsNhw5DQ">Muzyka</a>
+        <a class="btn btn-photos" href="https://drive.google.com/drive/folders/1SUFTiiOENjjkZqPOn7I2zLSy1NQPeN0L?usp=sharing">Podziel się zdjęciem</a>
+      </div>
+
+      <p class="note">
+        Każdy gość otrzyma spersonalizowany kod QR — zeskanuj go, aby RSVP uzupełniło się automatycznie.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="details" class="section">
+      <div class="container">
+        <h2>Rozkład</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Start</h3>
+            <p>15:00 - Przywitanie gości</p>
+          </div>
+          <div class="card">
+            <h3>Jedzenie</h3>
+            <p>17:00 - Pizza</p>
+          </div>
+          <div class="card">
+            <h3>Zabawy</h3>
+            <p>18:00 - Let's go 🕺</p>
+          </div>
+          <div class="card">
+            <h3>Jedzenie v2</h3>
+            <p>21:00 - Pizza</p>
+          </div>
+        <div class="card">
+            <h3>Początek ciszy nocnej</h3>
+            <p>22:00 - Na dworzu zachowujemy ciszę</p>
+          </div>
+          <div class="card">
+            <h3>Zakończenie</h3>
+            <p>04:00 - ostatnie driny</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP embedded on the MAIN PAGE -->
+    <section id="rsvp" class="section alt">
+      <div class="container">
+        <h2>RSVP</h2>
+        <p id="rsvpStatus">
+          Jeśli weszłaś/wszedłeś tu z QR z zaproszenia, kod powinien uzupełnić się automatycznie.
+        </p>
+
+        <div id="manualRsvp" class="card" style="margin: 12px 0; display:none;">
+          <h3 style="margin-top:0;">Kod zaproszenia</h3>
+          <p style="margin: 0 0 10px;">Jeśli kod nie uzupełnił się automatycznie, wklej go tutaj:</p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+            <input
+              id="inviteCode"
+              type="text"
+              placeholder="np. AbC123..."
+              style="flex: 1 1 280px; padding: 12px; border-radius: 14px; border: 1px solid rgba(31,41,55,.12);"
+            />
+            <button class="btn" type="button" id="applyCode">Zastosuj</button>
+            <a class="btn btn-secondary" id="openFormTab" href="#" target="_blank" rel="noopener">
+              Otwórz formularz w nowej karcie
+            </a>
+          </div>
+        </div>
+
+        <div class="form-embed" style="margin-top: 12px;">
+          <iframe
+            id="rsvpFrame"
+            src=""
+            title="RSVP Google Form"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <p style="opacity:.75; margin-top:10px;">
+          Jeśli coś nie działa na telefonie, użyj przycisku „Otwórz formularz w nowej karcie”.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Miejsce</h2>
+        <p>ul. Wybickiego 48, Sopot</p>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.5087316332892!2d18.54700629419137!3d54.43630642203787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0a986d6b656d%3A0x5de25258dab03d87!2sGenera%C5%82a%20J%C3%B3zefa%20Wybickiego%2048%2C%2081-842%20Sopot!5e0!3m2!1spl!2spl!4v1767557046863!5m2!1spl!2spl"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <h3>Dress code</h3>
+        <p>
+          Ubierz się tak, jak czujesz się najlepiej.<br>
+          Liczy się komfort i dobre samopoczucie
+        </p>
+
+        <h3>FAQ</h3>
+        <details>
+          <summary>Czy mogę wziąć ze sobą osobę towarzyszącą?</summary>
+          <p>Naturalnie.</p>
+        </details>
+        <details>
+          <summary>Dzieci?</summary>
+          <p>Broń Boże.</p>
+        </details>
+        <details>
+          <summary>Jak z jedeniem i napojemi?</summary>
+          <p>Na miejscu będzie jedzenie i napoje.<br>
+            Jeśli masz alergie, specjalną dietę lub inne potrzeby - daj nam znać w RSVP, postaramy się to uwzględnić.</p>
+        </details>
+        <details>
+          <summary>Czy mogę udział w tworzeniu playlisty na wesele?</summary>
+          
+          <p>
+            Mamy swoją playlistę, ktora bedzie puszczana z glosnikow. Dobra, tak naprawde jeszcze nie ma playlisty wiec jak masz jakies propozycje to smialo wrzucaj <a href="https://music.youtube.com/playlist?list=PLZXcRO66FCTfb11R_tczmDolO9foUSdRZ&jct=aT5jw3dRedewwnHsNhw5DQ">tu</a>.</p>
+        </details>
+        <details>
+          <summary>Chce podzielić się zdjęciami/Chce zobaczyć zdjęcia</summary>
+          <p>Jeśli będziesz mieć ochotę zrobić kilka zdjęć w trakcie imprezy, będzie nam bardzo miło, jeśli się nimi z nami podzielisz i je wstawisz <a href="https://drive.google.com/drive/folders/1SUFTiiOENjjkZqPOn7I2zLSy1NQPeN0L?usp=sharing">tu</a>.</p>
+        </details>
+        <details>
+          <summary>Prezenty</summary>
+          <p>Największą radością będzie Twoja obecność.
+        Jeśli jednak zechcesz coś przynieść — zrób to po swojemu.
+        Największą radością jest dla nas Twoja obecność 🤍 Jeśli jednak myślisz o prezencie, zrób to w sposób, który jest dla Ciebie naturalny. Nie mamy żadnych oczekiwań, poza jedną małą prośbą - bez kwiatów (w domu rządzą koty 🐱)
+        <p>
+        </details>
+        <details>
+            <summary>Do kiedy mogę wypełnić formularz RSVP?</summary>
+
+            <div class="faq-answer">
+                <p>Do 15 maja 2026.</p>
+
+                <div
+                class="countdown"
+                data-target="2026-05-15T00:00:00"
+                aria-live="polite"
+                >
+                Ładowanie...
+                </div>
+            </div>
+            </details>
+        </details>
+                <details>
+          <summary>Mam inne pytanie</summary>
+          <p>W razie pytań jesteśmy pod: <br>663 997 493 - Weronika, <br>609 271 840 - Dawid</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Weronika & Dawid • ❤️ • Widzimy się niedługo</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
