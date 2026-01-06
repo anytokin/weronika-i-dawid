@@ -23,7 +23,7 @@
         </div>
         <div class="card">
           <h3>Miejsce</h3>
-          <p>Sopot</p>
+          <p>ul. Wybickiego 48, Sopot</p>
         </div>
         <div class="card">
           <h3>Czas</h3>
@@ -76,56 +76,30 @@
         </div>
       </div>
     </section>
-
-    <!-- RSVP embedded on the MAIN PAGE -->
-    <section id="rsvp" class="section alt">
-      <div class="container">
-        <h2>RSVP</h2>
-        <p id="rsvpStatus">
-          Jeśli weszłaś/wszedłeś tu z QR z zaproszenia, kod powinien uzupełnić się automatycznie.
-        </p>
-
-        <div id="manualRsvp" class="card" style="margin: 12px 0; display:none;">
-          <h3 style="margin-top:0;">Kod zaproszenia</h3>
-          <p style="margin: 0 0 10px;">Jeśli kod nie uzupełnił się automatycznie, wklej go tutaj:</p>
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-            <input
-              id="inviteCode"
-              type="text"
-              placeholder="np. AbC123..."
-              style="flex: 1 1 280px; padding: 12px; border-radius: 14px; border: 1px solid rgba(31,41,55,.12);"
-            />
-            <button class="btn" type="button" id="applyCode">Zastosuj</button>
-            <a class="btn btn-secondary" id="openFormTab" href="#" target="_blank" rel="noopener">
-              Otwórz formularz w nowej karcie
-            </a>
-          </div>
-        </div>
-
-        <div class="form-embed" style="margin-top: 12px;">
-          <iframe
-            id="rsvpFrame"
-            src=""
-            title="RSVP Google Form"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <p style="opacity:.75; margin-top:10px;">
-          Jeśli coś nie działa na telefonie, użyj przycisku „Otwórz formularz w nowej karcie”.
-        </p>
-      </div>
-    </section>
-
     <section class="section alt">
+        <div class="container">
+            <h3>Dress code</h3>
+            <p>
+            Ubierz się tak, jak czujesz się najlepiej.<br>
+            Liczy się komfort i dobre samopoczucie
+            </p>
+        </div>
+        <br>
+        <div class="container">
+            <h3>Dojazd</h3>
+            <p>
+            Na własną rękę.<br>
+            Na posesji na posesji jest sporo miejsca do parkowania.<br>
+            15 min drogi pieszo od dworca SKM Sopot.
+            </p>
+        </div>
+    </section>
+     <section class="section">
       <div class="container">
         <h2>Miejsce</h2>
         <p>ul. Wybickiego 48, Sopot</p>
-
         <div class="map">
-          <iframe
+          <iframe style="filter: invert(90%) hue-rotate(180deg);"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.5087316332892!2d18.54700629419137!3d54.43630642203787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0a986d6b656d%3A0x5de25258dab03d87!2sGenera%C5%82a%20J%C3%B3zefa%20Wybickiego%2048%2C%2081-842%20Sopot!5e0!3m2!1spl!2spl!4v1767557046863!5m2!1spl!2spl"
             style="border:0;"
             allowfullscreen=""
@@ -133,21 +107,14 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
-        <h3>Dress code</h3>
-        <p>
-          Ubierz się tak, jak czujesz się najlepiej.<br>
-          Liczy się komfort i dobre samopoczucie
-        </p>
-
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
         <h3>FAQ</h3>
         <details>
           <summary>Czy mogę wziąć ze sobą osobę towarzyszącą?</summary>
           <p>Naturalnie.</p>
-        </details>
-        <details>
-          <summary>Dzieci?</summary>
-          <p>Broń Boże.</p>
         </details>
         <details>
           <summary>Jak z jedeniem i napojemi?</summary>
@@ -185,15 +152,54 @@
                 Ładowanie...
                 </div>
             </div>
-            </details>
         </details>
-                <details>
+        </details>
+        <details>
           <summary>Mam inne pytanie</summary>
           <p>W razie pytań jesteśmy pod: <br>663 997 493 - Weronika, <br>609 271 840 - Dawid</p>
         </details>
       </div>
     </section>
+    <section id="rsvp" class="section alt">
+      <div class="container">
+        <h2>RSVP</h2>
+        <p id="rsvpStatus">
+          Jeśli weszłaś/wszedłeś tu z QR z zaproszenia, kod powinien uzupełnić się automatycznie.
+        </p>
 
+        <div id="manualRsvp" class="card" style="margin: 12px 0; display:none;">
+          <h3 style="margin-top:0;">Kod zaproszenia</h3>
+          <p style="margin: 0 0 10px;">Jeśli kod nie uzupełnił się automatycznie, wklej go tutaj:</p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+            <input
+              id="inviteCode"
+              type="text"
+              placeholder="np. AbC123..."
+              style="flex: 1 1 280px; padding: 12px; border-radius: 14px; border: 1px solid rgba(31,41,55,.12);"
+            />
+            <button class="btn" type="button" id="applyCode">Zastosuj</button>
+            <a class="btn btn-secondary" id="openFormTab" href="#" target="_blank" rel="noopener">
+              Otwórz formularz w nowej karcie
+            </a>
+          </div>
+        </div>
+
+        <div class="form-embed" style="margin-top: 12px;">
+          <iframe style="filter: invert(90%)";
+            id="rsvpFrame"
+            src=""
+            title="RSVP Google Form"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <p style="opacity:.75; margin-top:10px;">
+          Jeśli coś nie działa na telefonie, użyj przycisku „Otwórz formularz w nowej karcie”.
+        </p>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <p>Weronika & Dawid • ❤️ • Widzimy się niedługo</p>
