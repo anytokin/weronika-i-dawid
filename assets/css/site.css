@@ -77,11 +77,11 @@ h1{
 }
 
 .card{
-  background: var(--card);
+  /* background: var(--card); */
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 14px 14px;
-  box-shadow: 0 8px 28px rgba(0,0,0,.05);
+  box-shadow: 0 8px 28px rgba(0,0,0,.02);
 }
 
 .card h3{
@@ -93,7 +93,7 @@ h1{
   letter-spacing: .06em;
 }
 
-.card p{ margin:0; font-size: 18px; }
+.card p{ margin:0; font-size: 18px; font-weight: bold}
 
 .cta-row{
   display:flex;
@@ -119,11 +119,12 @@ h1{
   border-radius: 999px;
   text-decoration:none;
   font-weight: 700;
-  border: 1px solid rgba(124,58,237,.25);
-  background: linear-gradient(180deg, rgba(124,58,237,.12), rgba(124,58,237,.06));
-  transition:
-  transform 150ms ease,
-  filter 150ms ease;
+
+  background: linear-gradient(180deg,  #f3e5d49c, #f3dcbfb2);
+  color: #2F3A4A;
+  box-shadow: 0 6px 16px rgba(0,0,0,.05);
+
+  transition: 0.2s ease;
 }
 
 button.btn{
@@ -135,10 +136,9 @@ button.btn{
 
 .btn:hover{ 
   transform: translateY(-2px);
-  filter: brightness(0.95);
 }
 
-.btn-rsvp{
+/* .btn-rsvp{
   border-color: rgba(211, 233, 14, 0.25);
   background: linear-gradient(180deg, rgba(211, 233, 14, 0.25), rgba(131, 233, 14, 0.06));
 }
@@ -151,7 +151,7 @@ button.btn{
 .btn-photos{
   border-color: rgba(14,165,233,.25);
   background: linear-gradient(180deg, rgba(14,165,233,.12), rgba(14,165,233,.06));
-}
+} */
 
 
 .note{
@@ -170,6 +170,7 @@ button.btn{
 }
 
 .container{
+  padding-left: 10px;;
   max-width: 980px;
   margin: 0 auto;
 }

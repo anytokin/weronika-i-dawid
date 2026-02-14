@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (status) {
       status.textContent = token
-        ? 'Kod zaproszenia wykryty — formularz poniżej powinien być uzupełniony.'
+        ? 'Kod zaproszenia wykryty - formularz poniżej powinien być uzupełniony.'
         : 'Zeskanuj QR z zaproszenia, aby kod uzupełnił się automatycznie (albo wklej kod ręcznie).';
     }
   }
