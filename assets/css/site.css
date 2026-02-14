@@ -120,7 +120,8 @@ h1{
   text-decoration:none;
   font-weight: 700;
 
-  background: linear-gradient(180deg,  #f3e5d49c, #f3dcbfb2);
+  background: linear-gradient(180deg,  #f19a729c, #ddc78ab2);
+  opacity:0.8;
   color: #2F3A4A;
   box-shadow: 0 6px 16px rgba(0,0,0,.05);
 
