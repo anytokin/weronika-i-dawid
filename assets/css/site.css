@@ -245,8 +245,7 @@ details p{ color: var(--muted); margin: 10px 0 0; }
   padding: 10px 12px;
   border-radius: 14px;
 
-  border: 1px solid var(--line);
-  background: rgba(124, 58, 237, 0.08); 
+  background: linear-gradient(180deg,  #e28a619c, #eed286b2);
 
   font-weight: 700;
 }
